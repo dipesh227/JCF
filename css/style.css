@@ -8,20 +8,34 @@
     --platinum: #F6F6F8ff;
 
     /* CSS HSL */
-    --bright-snow-hsl: hsla(300, 12%, 97%, 1);
-    --metallic-gold-hsl: hsla(49, 71%, 45%, 1);
-    --yale-blue-hsl: hsla(202, 98%, 19%, 1);
-    --black-forest-hsl: hsla(127, 82%, 13%, 1);
-    --platinum-hsl: hsla(240, 12%, 97%, 1);
+    --bright-snow: hsla(300, 12%, 97%, 1);
+    --metallic-gold: hsla(49, 71%, 45%, 1);
+    --yale-blue: hsla(202, 98%, 19%, 1);
+    --black-forest: hsla(127, 82%, 13%, 1);
+    --platinum: hsla(240, 12%, 97%, 1);
 
-    /* CSS RGB */
-    --bright-snow-rgb: rgba(248, 246, 248, 1);
-    --metallic-gold-rgb: rgba(198, 169, 33, 1);
-    --yale-blue-rgb: rgba(1, 61, 95, 1);
-    --black-forest-rgb: rgba(6, 59, 12, 1);
-    --platinum-rgb: rgba(246, 246, 248, 1);
+    /* SCSS HEX */
+    --bright-snow: #F8F6F8ff;
+    --metallic-gold: #C6A921ff;
+    --yale-blue: #013D5Fff;
+    --black-forest: #063B0Cff;
+    --platinum: #F6F6F8ff;
 
-    /* CSS Gradients */
+    /* SCSS HSL */
+    --bright-snow: hsla(300, 12%, 97%, 1);
+    --metallic-gold: hsla(49, 71%, 45%, 1);
+    --yale-blue: hsla(202, 98%, 19%, 1);
+    --black-forest: hsla(127, 82%, 13%, 1);
+    --platinum: hsla(240, 12%, 97%, 1);
+
+    /* SCSS RGB */
+    --bright-snow: rgba(248, 246, 248, 1);
+    --metallic-gold: rgba(198, 169, 33, 1);
+    --yale-blue: rgba(1, 61, 95, 1);
+    --black-forest: rgba(6, 59, 12, 1);
+    --platinum: rgba(246, 246, 248, 1);
+
+    /* SCSS Gradient */
     --gradient-top: linear-gradient(0deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
     --gradient-right: linear-gradient(90deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
     --gradient-bottom: linear-gradient(180deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
@@ -32,11 +46,12 @@
     --gradient-bottom-left: linear-gradient(315deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
     --gradient-radial: radial-gradient(#F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
 
-    /* Bootstrap Overrides */
+    /* Bootstrap Color Mapping */
     --bs-primary: var(--metallic-gold);
     --bs-secondary: var(--yale-blue);
     --bs-dark: var(--black-forest);
     --bs-light: var(--platinum);
+    --bs-white: var(--bright-snow);
     --bs-tertiary: #797E88;
 }
 
@@ -315,7 +330,7 @@
     font-size: 30px;
     font-weight: normal;
     color: var(--bs-white);
-    background: #000000;
+    background: var(--black-forest);
     opacity: 1;
 }
 
