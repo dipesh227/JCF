@@ -1,5 +1,42 @@
 /********** Template CSS **********/
 :root {
+    /* CSS HEX */
+    --bright-snow: #F8F6F8ff;
+    --metallic-gold: #C6A921ff;
+    --yale-blue: #013D5Fff;
+    --black-forest: #063B0Cff;
+    --platinum: #F6F6F8ff;
+
+    /* CSS HSL */
+    --bright-snow-hsl: hsla(300, 12%, 97%, 1);
+    --metallic-gold-hsl: hsla(49, 71%, 45%, 1);
+    --yale-blue-hsl: hsla(202, 98%, 19%, 1);
+    --black-forest-hsl: hsla(127, 82%, 13%, 1);
+    --platinum-hsl: hsla(240, 12%, 97%, 1);
+
+    /* CSS RGB */
+    --bright-snow-rgb: rgba(248, 246, 248, 1);
+    --metallic-gold-rgb: rgba(198, 169, 33, 1);
+    --yale-blue-rgb: rgba(1, 61, 95, 1);
+    --black-forest-rgb: rgba(6, 59, 12, 1);
+    --platinum-rgb: rgba(246, 246, 248, 1);
+
+    /* CSS Gradients */
+    --gradient-top: linear-gradient(0deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
+    --gradient-right: linear-gradient(90deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
+    --gradient-bottom: linear-gradient(180deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
+    --gradient-left: linear-gradient(270deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
+    --gradient-top-right: linear-gradient(45deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
+    --gradient-bottom-right: linear-gradient(135deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
+    --gradient-top-left: linear-gradient(225deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
+    --gradient-bottom-left: linear-gradient(315deg, #F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
+    --gradient-radial: radial-gradient(#F8F6F8ff, #C6A921ff, #013D5Fff, #063B0Cff, #F6F6F8ff);
+
+    /* Bootstrap Overrides */
+    --bs-primary: var(--metallic-gold);
+    --bs-secondary: var(--yale-blue);
+    --bs-dark: var(--black-forest);
+    --bs-light: var(--platinum);
     --bs-tertiary: #797E88;
 }
 
@@ -591,7 +628,7 @@
 /*** Footer ***/
 .footer {
     color: var(--bs-tertiary);
-    background: linear-gradient(rgba(5, 19, 17, .95), rgba(5, 19, 17, .95)), url(../img/bg-footer.jpg) center center no-repeat;
+    background: linear-gradient(rgba(6, 59, 12, .95), rgba(6, 59, 12, .95)), url(../img/bg-footer.jpg) center center no-repeat;
     background-size: cover;
 }
 
